@@ -18,22 +18,15 @@
 // }
 
 // export default App;
-import Login from "./componenets/register/Login";
-import Sighup from "./componenets/register/Sighup";
-import Home from "./componenets/register/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from 'react';
+
+import React from 'react'
+import Main from "./componenets/products/Main"
+import "./App.css"
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Login/>}/>
-          <Route path="/signup" element={<Signup/>}/>
-          <Route path="/home" element={<Home/>}/>
-        </Routes>
-      </Router>
+      <Main/>
     </div>
   );
 }
